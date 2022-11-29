@@ -1,6 +1,8 @@
 :root {
     --primary : rgb(50, 50, 172);
+    --secondary: #1E3D71;
     --text-color : rgb(146, 146, 146);
+    --footer-bg: #EDF2FE;
 }
 
 /* Header */
@@ -52,22 +54,133 @@ nav {
 .one-sec {
     background-color: aqua;
     display: flex;
+    flex-direction: column;
 }
 
 .one-sec img{
     height: 100vh;
     width: 60%;
 }
+/*+++++++++++++++++++*/
 
-
-.vaccines-logos {
+.vaccines-container {
     display: flex;
-    gap: 45px;
+    justify-content: space-evenly;
     align-items: center;
 }
+.div-logo img {
+    width: 180px;
+}
 
-.vaccines-logos img {
-    width: 250px;
+/*+++++++++++++++++++*/
+
+.advice-charts {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.advice-box {
+    padding: 30px 30px;
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    border: 1px solid rgb(41, 39, 39);
+}
+.advice-box i {
+    font-size: 25px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: var(--primary);
+}
+.advice-box h3 {
+    color: var(--secondary);
+    margin: 30px 0px;
+}
+.advice-box p {
+
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*      Footer        */
+
+footer {
+    width: 100%;
+    background-color: var(--footer-bg);
+    font-family: 'Poppins', sans-serif;
+}
+
+.sub-one {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+.sub-one p {
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 600;
+}
+.one-text {
+    margin-left: 70px;
+}
+.one-text .text-frase p{
+    margin: 0px;
+}
+.one-text .text-frase {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.sub-one .one-links {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    margin-right: 70px;
+}
+.one-col h3 {
+    color: var(--secondary);
+}
+.sub-two {
+    padding: 20px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 650;
+    color: var(--text-color);
+}
+.sub-two .two-text {
+    margin-left: 70px;
+}
+.sub-two .two-policy {
+    margin-right: 70px;
+    display: inline-flex;
+    gap: 10px;
+}
+.sub-one h2 {
+    color: var(--primary);
+}
+
+
+
+
+/*++++++++++++++++++++*/
+.imgx {
+    width: 250px;
+}
