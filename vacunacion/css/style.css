@@ -53,10 +53,15 @@ nav {
 /*Main and Sections*/
 
 .one-sec {
-    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    font-family: 'Poppins', sans-serif;
+}
+.one-sec .one-sec-c1 {
     display: flex;
     flex-direction: column;
-    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    margin: 20% auto 0% auto;
 }
 .one-title h2 {
     font-family: 'Montserrat', sans-serif;
@@ -70,9 +75,10 @@ nav {
 
 
 .benefits {
+    margin: 10px 0 10px 0;
     display: flex;
+    gap: 25px;
     justify-content: space-between;
-    background-color: #f3d2d2;
     color: var(--secondary)
 }
 .benefits div i {
@@ -82,8 +88,9 @@ nav {
     border-radius: 5px;
 }
 
-
-
+.form-container{
+    margin-top: 50px;
+}
 
 
 
@@ -92,7 +99,9 @@ nav {
 
 
 .form {
-    margin-left: 20px;
+    left: auto;
+    position: absolute;
+    width: 700px;
     padding: 10px 20px;
     background-color: #ffffff;
     display: flex;
@@ -139,8 +148,8 @@ nav {
 
 
 
-.one-sec img{
-    width: 250px;
+.one-sec .one-sec-c2 img{
+    width: 100%;
 }
 /*+++++++++++++++++++*/
 
@@ -180,10 +189,73 @@ nav {
     color: var(--secondary);
     margin: 30px 0px;
 }
+/*---------------------*/
+.prep-sec {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.prep-sec .prep-c1 img{
+    width: 100%;
+}
+.prep-c2 h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--secondary);
+}
+.prep-c2 p {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.prep-c2 .prep-c2-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.prep-box {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    width: 60%;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 10px 25px;
+    border: 1px solid black;
+}
+
+.prep-box i {
+    padding: 10px;
+    background-color: var(--bg-icon);
+    color: var(--primary);
+    border-radius: 5px;
+}
+.prep-box p {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--secondary);
+}
+
+
+
+/*---------------------*/
+
+.emercency-sec {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.emercency-sec .emergency-c2 img {
+    width: 100%;
+}
+
+
 
 .boxes-contact {
-    display: flex;
-    gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(2,0.35fr);
+    grid-template-rows: repeat(2,0.35fr);
+    gap: 20px;
+    justify-content: center;
 }
 .box-emergency {
     border: 1px solid black;
