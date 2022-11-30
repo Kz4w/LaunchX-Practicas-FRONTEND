@@ -3,6 +3,7 @@
     --secondary: #1E3D71;
     --text-color : rgb(146, 146, 146);
     --footer-bg: #EDF2FE;
+    --bg-icon : #E9EFFF;
 }
 
 /* Header */
@@ -55,11 +56,91 @@ nav {
     background-color: aqua;
     display: flex;
     flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+.one-title h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: var(--secondary);
+}
+.one-title p {
+    font-size: 16px;
+    color: var(--text-color);
 }
 
+
+.benefits {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f3d2d2;
+    color: var(--secondary)
+}
+.benefits div i {
+    color: #FFD012;
+    padding: 5px;
+    background-color: #FFFCF0;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+.form {
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    border-radius: 5px;
+}
+.form div .form-opt {
+    color: var(--secondary);
+    font-size: 18px;
+    font-weight: 650;
+    margin: 0px 0px 15px 15px;
+}
+.form div .title-text {
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.title-div{
+    display: inline-flex;
+    align-items: center;
+}
+
+.title-div p {
+    margin-left: 10px;
+}
+.title-div i {
+    font-size: 15px;
+    color: var(--primary);
+    background-color: var(--bg-icon);
+    padding: 8px;
+    border-radius: 5px;
+}
+.form div button {
+    padding: 10px 20px;
+    color: white;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+
+
 .one-sec img{
-    height: 100vh;
-    width: 60%;
+    width: 250px;
 }
 /*+++++++++++++++++++*/
 
@@ -99,19 +180,35 @@ nav {
     color: var(--secondary);
     margin: 30px 0px;
 }
-.advice-box p {
 
+.boxes-contact {
+    display: flex;
+    gap: 25px;
 }
-
-
-
-
-
-
-
-
-
-
+.box-emergency {
+    border: 1px solid black;
+    padding: 25px;
+    border-radius: 10px;
+    align-items: center;
+}
+.ebox-header {
+    display: flex;
+    align-items: center;
+}
+.ebox-header i {
+    font-size: 20px;
+    background-color: var(--bg-icon);
+    padding: 8px;
+    border-radius: 5px;
+    color: var(--primary);
+}
+.box-emergency button{
+    color: white;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
 
 
 
