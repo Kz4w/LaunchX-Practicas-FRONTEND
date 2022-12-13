@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria Asuza</title>
+</head>
+<body>
+    <header>
+        <h1>Pasteleria Asuza</h1>
+        <nav>
+            <ul>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Ubicacion">Encuentranos</a></li>
+                <li><a href="#Pedidos">Pedidos</a></li>
+                <li><a href="../practicas/admin.html">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <img src="./asuza.png" alt="logo pasteleria asuza">
+    <section id="Menu" name="Menu">
+        <h2>Sabores</h2>
+        <p>Los mas Pedidos por nuestros clientes</p>
+
+        <h4>Biscocho</h4>
+        <ul>
+            <li>Vainilla ........ $15</li>
+            <li>Chocolate ....... $20</li>
+            <li>Fresa ........... $24</li>
+            <li>Limon ........... $14</li>
+        </ul>
+
+        <h4>Relleno</h4>
+        <ul>
+            <li>Ganache.............. $15</li>
+            <li>Mermelada ........... $20</li>
+            <li>Crema para Batir .... $24</li>
+            <li>Fruta y crema ....... $14</li>
+        </ul>
+
+        <h2>Decoracion y Adornos</h2>
+        <p>Perzonalizamos a imaginacion del cliente</p>
+        <h4>Material de Decoracion</h4>
+        <ul>
+            <li>Chantilly ...... $14</li>
+            <li>Caramelo ....... $16</li>
+            <li>Frutas ......... $20</li>
+            <li>Merengue ....... $15</li>
+            <li>Fondant ........ $18</li>
+        </ul>
+        <h4>Estilo de Decoracion</h4>
+        <ul>
+            <li>Floral ...... $14</li>
+            <li>Geometrica ....... $13</li>
+            <li>3D ......... $25</li>
+            <li>Drip Cakes ....... $15</li>
+        </ul>
+    </section>
+    <hr>
+    <section id="Ubicacion">
+        <h2>Ubicacion</h2>
+        <p>Nuestras sucursales: </p>
+        <ul>
+            <ol><a href="https://goo.gl/maps/ewLfToFoJM3yd73h9" target="_blank">Calle Enrique Palacios 325, Miraflores</a></ol>
+            <ol><a href="https://g.page/PattyPasteleriaArtesanal?share" target="_blank">Av. Los Conquistadores 521, San Isidro</a></ol>
+            <ol><a href="https://goo.gl/maps/TxHoPNz1Fn8qoTxZ6" target="_blank">Av. Alfredo Benavides 1113, Miraflores</a></ol>
+        </ul>
+
+        <p>CONTÁCTATE CON NOSOTROS</p>
+        <ul>
+            <li>WhatsApp: (+51) 1414214142</li>
+            <li>Correo: pedidos@asuza.pe</li>
+            <li>Horario: De Lunes a Domingo de 11 am a 8 pm</li>
+        </ul>
+    <hr>
+    </section>
+    <section id="Pedidos">
+        <h2>Pedidos</h2>
+        <form action="">
+            <p>Elija sus preferencias: </p>
+            <label for="NumeroPastel">¿Cuantos Pasteles quieres?</label>
+            <input type="number" name="NumeroPastel" id="NumeroPastel"><br>
+
+            <p>¿Que bizcocho prefiere? </p>
+            <select name="bizcocho" id="bizcocho">
+                <option value="VainillaOp">Vainilla</option>
+                <option value="ChocolateOp">Chocolate</option>
+                <option value="FresaOp">Fresa</option>
+                <option value="LimonOp">Limon</option>
+            </select><br>
+
+            <p>¿Que relleno prefiere? </p>
+            <select name="relleno" id="relleno">
+                <option value="GanacheOp">Ganache</option>
+                <option value="MermeladaOp">Mermelada</option>
+                <option value="CremaOp">Crema para batir</option>
+                <option value="FrutaOp">Fruta y crema</option>
+            </select><br>
+
+            <p>¿Que material de decoracion prefiere? </p>
+            <input type="checkbox" value="Chantilly" name="Chantilly" id="Chantilly">
+            <label for="Chantilly"> Chantilly</label><br>
+            <input type="checkbox" value="Caramelo" name="Caramelo" id="Caramelo">
+            <label for="Caramelo"> Caramelo</label><br>
+            <input type="checkbox" value="Fondant" name="Fondant" id="Fondant">
+            <label for="Fondant"> Fondant</label><br>
+            <input type="checkbox" value="Frutas" name="Frutas" id="Frutas">
+            <label for="Frutas"> Frutas</label><br>
+            <input type="checkbox" value="Merengue" name="Merengue" id="Merengue">
+            <label for="Merengue"> Merengue</label><br>
+
+            <p>¿Que estilo de decoracion prefiere?</p>
+            <select name="estiloPastel" id="estiloPastel">
+                <option value="Floral">Floral</option>
+                <option value="3D">3D</option>
+                <option value="Geometrica">Geometrica</option>
+                <option value="DripCakes">Drip Cakes</option>
+            </select><br>
+
+            <p>¿Tienes una imagen de referencia?</p>
+            <input type="file" id="PastelReferencia" accept=".jpg, .png" multiple><br><br>
+
+            <label for="Nombre">Nombre: </label>
+            <input type="text" id="Nombre" name="Nombre" placeholder="Escribe tu nombre"><br>
+    
+            <label for="Telefono">Telefono: </label>
+            <input type="tel" id="Telfono" name="Telefono" placeholder="Escribe tu Telefono"><br>
+    
+            <label for="Correo">Correo: </label>
+            <input type="email" id="Correo" name="Correo" placeholder="someone@example.com"><br>
+
+            <label for="Direccion">Direccion: </label>
+            <input type="text" id="Direccion" name="Direccion"><br>
+    
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </form>
+    </section>
+    <hr>
+</body>
+</html>

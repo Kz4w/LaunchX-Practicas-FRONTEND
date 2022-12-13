@@ -6,6 +6,10 @@
     --bg-icon : #E9EFFF;
 }
 
+section {
+    margin-bottom: 100px;
+}
+
 /* Header */
 .sub-header {
     --webkit-backdrop-filter: blur(8px);
@@ -248,13 +252,28 @@ nav {
     width: 100%;
 }
 
-
+.emergency-c1-pf {
+    margin: 0px auto 70px 50px;
+}
+.emergency-c1-pf h2 {
+    font-size: 30px;
+    color: var(--secondary);
+    font-family: 'Montserrat', sans-serif;
+}
+.emergency-c1-pf p {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    font-size: 15px;
+}
 
 .boxes-contact {
+    margin-top: 140px;
+    font-family: 'Poppins', sans-serif;
     display: grid;
     grid-template-columns: repeat(2,0.35fr);
     grid-template-rows: repeat(2,0.35fr);
     gap: 20px;
+    align-content: center;
     justify-content: center;
 }
 .box-emergency {
@@ -266,20 +285,37 @@ nav {
 .ebox-header {
     display: flex;
     align-items: center;
+    gap: 20px;
+    justify-content: center;
 }
 .ebox-header i {
-    font-size: 20px;
+    font-size: 25px;
     background-color: var(--bg-icon);
-    padding: 8px;
+    padding: 10px;
     border-radius: 5px;
     color: var(--primary);
 }
+.ebox-header p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 500;
+}
+.ebox-header .ebox-header-title {
+    margin-bottom: 10px;
+    color: var(--secondary);
+    font-size: 20px;
+
+}
 .box-emergency button{
+    margin-top: 30px;
     color: white;
     background-color: var(--primary);
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
+    height: 50px;
+    width: 100%;
+    font-weight: 500;
 }
 
 
