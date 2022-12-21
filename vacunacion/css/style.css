@@ -1,6 +1,6 @@
 :root {
-    --primary : rgb(50, 50, 172);
-    --secondary: #1E3D71;
+    --primary : rgb(50, 80, 205);
+    --secondary: #1e3d71;
     --text-color : rgb(146, 146, 146);
     --footer-bg: #EDF2FE;
     --bg-icon : #E9EFFF;
@@ -12,11 +12,10 @@ section {
 
 /* Header */
 .sub-header {
-    --webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
+    --webkit-backdrop-filter: blur(2px);
     width: 100%;
     min-height: 70px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.8);
     align-items: center;
     justify-content: space-between;
     display: flex;
@@ -27,6 +26,7 @@ section {
     font-size: 12px;
     font-family: 'Montserrat', sans-serif;
     margin-left: 50px;
+    color: var(--primary);
 }
 nav {
     margin-right: 50px;
@@ -96,10 +96,16 @@ nav {
     margin-top: 50px;
 }
 
-
-
-
-
+.text-form {
+    color: var(--secondary);
+    font-weight: 600;
+}
+.text-form i {
+    padding: 8px;
+    background-color: var(--bg-icon);
+    border-radius: 4px;
+    margin-right: 10px;
+}
 
 
 .form {
@@ -112,6 +118,7 @@ nav {
     align-items: center;
     gap: 50px;
     border-radius: 5px;
+    box-shadow: 25px 25px 50px 25px rgba(30, 61, 113,0.1);
 }
 .form div .form-opt {
     color: var(--secondary);
@@ -168,6 +175,21 @@ nav {
 
 /*+++++++++++++++++++*/
 
+.advice-title {
+    margin: 50px 0px 50px 100px;
+    padding: 10px;
+}
+.advice-title h2{
+    color: var(--secondary);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.advice-title p {
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+}
+
 .advice-charts {
     display: flex;
     gap: 20px;
@@ -179,12 +201,12 @@ nav {
     width: 200px;
     height: 250px;
     border-radius: 10px;
-    border: 1px solid rgb(41, 39, 39);
+    border: 3px solid rgb(249, 249, 254);
 }
 .advice-box i {
     font-size: 25px;
     padding: 10px;
-    background-color: transparent;
+    background-color: var(--bg-icon);
     border-radius: 5px;
     margin-left: 10px;
     color: var(--primary);
@@ -192,7 +214,19 @@ nav {
 .advice-box h3 {
     color: var(--secondary);
     margin: 30px 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
 }
+.advice-box p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: var(--text-color);
+}
+
+.advice-box:hover {
+    box-shadow: 5px 5px 30px 5px rgba(30, 61, 113,0.1);
+}
+
 /*---------------------*/
 .prep-sec {
     display: grid;
@@ -206,16 +240,20 @@ nav {
     font-size: 35px;
     font-weight: 700;
     color: var(--secondary);
+    margin-bottom: 50px;
 }
 .prep-c2 p {
+    font-family: 'Poppins', sans-serif;
     color: var(--text-color);
-    font-weight: 600;
+    margin-bottom: 20px;
 }
 
-.prep-c2 .prep-c2-container {
+.prep-c2-container {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    padding-top: 20px;
+    margin: 20px 0px 10px 20px;
 }
 .prep-box {
     display: flex;
@@ -225,7 +263,10 @@ nav {
     justify-content: space-between;
     border-radius: 5px;
     padding: 10px 25px;
-    border: 1px solid black;
+    border: 3px solid rgb(249, 249, 254);
+}
+.prep-box:hover {
+    box-shadow: 5px 5px 15px 5px rgba(30, 61, 113,0.1);
 }
 
 .prep-box i {
@@ -277,11 +318,15 @@ nav {
     justify-content: center;
 }
 .box-emergency {
-    border: 1px solid black;
+    border: 3px solid rgb(249, 249, 254);
     padding: 25px;
     border-radius: 10px;
     align-items: center;
 }
+.box-emergency:hover {
+    box-shadow: 5px 5px 15px 5px rgba(30, 61, 113,0.1);
+}
+
 .ebox-header {
     display: flex;
     align-items: center;
