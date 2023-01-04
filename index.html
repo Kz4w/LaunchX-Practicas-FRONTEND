@@ -4,14 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
     <title>Practicas</title>
+    <style>
+        :root {
+            --c1 : #00897b;
+            --c2 : #00564d;
+            --c3 : #282828;
+            --c4 : #363636;
+            --c5 : #969696;
+            --c6 : #ffffff;
+        }
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: var(--c5);
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        header {
+            height: 70px;
+            width: 100%;
+            background-color: var(--c3);
+            text-align: center;
+        }
+        header h1 {
+            color: var(--c6);
+        }
+        .init-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .card {
+            background-color: var(--c1);
+            width: 250px;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .card-button {
+            text-decoration: none;
+            background-color: var(--c2);
+            height: 20px;
+            width: 60%;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            color: var(--c3);
+        }
+        footer {
+            height: 30px;
+            width: 100%;
+            background-color: var(--c3);
+        }
+
+    </style>
 </head>
 <body>
-    <ol>
-        <li><a href="abogabot/abogabot.md" target="_blank">Abogabot - Introduccion</a></li>
-        <li><a href="pasteleria/index.html" target="_blank">Pasteleria - HTML</a></li>
-        <li><a href="vacunacion/vacuna.html" target="_blank">Vacunación - CSS</a></li>
-        <li><a href="pokedex/pokedex.html" target="_blank">Pokedex - Js</a></li>
-    </ol>
+    <header>
+        <h1> LaunchX Practicas FrontEnd </h1>
+    </header>
+    <section class="init-section">
+        <div class="card">
+            <h2>Abogabot</h2>
+            <img src="/utils/abogabot.png" alt="card-one-image">
+            <a class="card-button" href="abogabot/abogabot.md" target="_blank"> View </a>
+        </div>
+        <div class="card">
+            <h2>Pasteleria Asuza</h2>
+            <img src="utils/pasteleria.webp" alt="card-one-image">
+            <a class="card-button" href="pasteleria/index.html" target="_blank"> View </a>
+        </div>
+        <div class="card">
+            <h2>Vaccination</h2>
+            <img src="utils/vaccination.jpg" alt="card-one-image">
+            <a class="card-button" href="vacunacion/vacuna.html" target="_blank"> View </a>
+        </div>
+        <div class="card">
+            <h2>Pokedex</h2>
+            <img src="utils/pokedex.webp" alt="card-one-image">
+            <a class="card-button" href="pokedex/pokedex.html" target="_blank"> View </a>
+        </div>
+
+    </section>
+    <footer>
+
+    </footer>
 </body>
 </html>
